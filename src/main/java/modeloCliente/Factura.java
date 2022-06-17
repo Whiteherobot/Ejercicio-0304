@@ -21,6 +21,10 @@ public class Factura {
         this.direccion = direccion;
         this.cliente = cliente;
     }
+
+    public Factura(Producto producto) {
+        this.producto = producto;
+    }
     
 
     public int getCodigo() {

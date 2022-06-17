@@ -1,18 +1,29 @@
 package modeloCliente;
 //@michi
 
-import java.time.LocalDate;
+
 
 public class Producto {
    private int costoProducto;
    private String direccionEnvio;
    private String nombreProducto;
+   private Factura factura;
+   private Cliente cliente;
 
     public Producto(int costoProducto, String direccionEnvio, String nombreProducto) {
         this.costoProducto = costoProducto;
         this.direccionEnvio = direccionEnvio;
         this.nombreProducto = nombreProducto;
     }
+
+    public Producto(int costoProducto, String direccionEnvio, String nombreProducto, Factura factura, Cliente cliente) {
+        this.costoProducto = costoProducto;
+        this.direccionEnvio = direccionEnvio;
+        this.nombreProducto = nombreProducto;
+        this.factura = factura;
+        this.cliente = cliente;
+    }
+    
 
     public int getCostoProducto() {
         return costoProducto;
@@ -37,6 +48,23 @@ public class Producto {
     public void setNombreProducto(String nombreProducto) {
         this.nombreProducto = nombreProducto;
     }
+
+    public Factura getFactura() {
+        return factura;
+    }
+
+    public void setFactura(Factura factura) {
+        this.factura = factura;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+    
 
     @Override
     public String toString() {

@@ -229,16 +229,16 @@ public class VistaCliente extends javax.swing.JFrame {
         var datos = new Object[this.clienteControl.listar().size()][3];
         
         var i=0;
-        for(var capitan:this.clienteControl.listar())
+       for(var capitan:this.clienteControl.listar())
         {
             datos[i][0]=capitan.getCodigo();
             datos[i][1]=capitan.getNombre();
-            datos[i][2]=capitan.getApellido();
+           datos[i][2]=capitan.getApellido();
             i++;
         }
-        this.modeloTabla = new DefaultTableModel(datos,encabezado);
-        this.jTable1.setModel(modeloTabla);
-    }
+       this.modeloTabla = new DefaultTableModel(datos,encabezado);
+       this.jTable1.setModel(modeloTabla);
+   }
     
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:

@@ -4,74 +4,43 @@ package modeloCliente;
 
 
 public class Producto {
-   private int costoProducto;
-   private String direccionEnvio;
-   private String nombreProducto;
-   private Factura factura;
-   private Cliente cliente;
+   private int codigo;
+   private String nombre;
+   private String direccion;
 
-    public Producto(int costoProducto, String direccionEnvio, String nombreProducto) {
-        this.costoProducto = costoProducto;
-        this.direccionEnvio = direccionEnvio;
-        this.nombreProducto = nombreProducto;
+    public Producto(int codigo, String nombre, String direccion) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.direccion = direccion;
     }
 
-    public Producto(int costoProducto, String direccionEnvio, String nombreProducto, Factura factura, Cliente cliente) {
-        this.costoProducto = costoProducto;
-        this.direccionEnvio = direccionEnvio;
-        this.nombreProducto = nombreProducto;
-        this.factura = factura;
-        this.cliente = cliente;
-    }
-    
-
-    public int getCostoProducto() {
-        return costoProducto;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setCostoProducto(int costoProducto) {
-        this.costoProducto = costoProducto;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
-    public String getDireccionEnvio() {
-        return direccionEnvio;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setDireccionEnvio(String direccionEnvio) {
-        this.direccionEnvio = direccionEnvio;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getNombreProducto() {
-        return nombreProducto;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setNombreProducto(String nombreProducto) {
-        this.nombreProducto = nombreProducto;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
-
-    public Factura getFactura() {
-        return factura;
-    }
-
-    public void setFactura(Factura factura) {
-        this.factura = factura;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-    
 
     @Override
     public String toString() {
-        return "Producto{" + "costoProducto=" + costoProducto + 
-                ", direccionEnvio=" + direccionEnvio + ", nombreProducto=" + 
-                nombreProducto + '}';
-    }
-
-   
+        return "Producto{" + "codigo=" + codigo + ", nombre=" + nombre +
+               ", direccion=" + direccion + '}';
+    } 
 }

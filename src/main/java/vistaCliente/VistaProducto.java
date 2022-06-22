@@ -235,9 +235,9 @@ public class VistaProducto extends javax.swing.JFrame {
         var i=0;
         for(var producto:this.productoControl.listar())
         {
-            datos[i][0]=producto.getCostoProducto();
-            datos[i][1]=producto.getNombreProducto();
-            datos[i][2]=producto.getDireccionEnvio();
+//            datos[i][0]=producto.getCostoProducto();
+//            datos[i][1]=producto.getNombreProducto();
+//            datos[i][2]=producto.getDireccionEnvio();
             i++;
         }
         this.modeloTabla = new DefaultTableModel(datos,encabezado);

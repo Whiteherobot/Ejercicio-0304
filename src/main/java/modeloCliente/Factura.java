@@ -15,12 +15,22 @@ public class Factura {
         this.direccion = direccion;
     }
 
+    public Factura(int codigo, String nombre, String direccion, Cliente cliente, Producto producto) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.cliente = cliente;
+        this.producto = producto;
+    }
+
     public Factura(int codigo, String nombre, String direccion, Cliente cliente) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.direccion = direccion;
         this.cliente = cliente;
     }
+
+ 
 
     public Factura(Producto producto) {
         this.producto = producto;
@@ -58,6 +68,15 @@ public class Factura {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
+    }
+    
 
     @Override
     public String toString() {
